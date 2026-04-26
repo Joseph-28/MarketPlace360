@@ -39,17 +39,17 @@ function obtenerVendedores(productos) {
 function obtenerImagenVendedor(nombre) {
     const imagenes = {
         // Imagágen personalizada
-        "Moda CR": "/img/image-solid.png",
-        "Deportes CR": "/img/image-solid.png",
-        "Zapatos CR": "/img/image-solid.png",
-        "Belleza CR": "/img/image-solid.png",
-        "Salud CR": "/img/image-solid.png",
-        "Hogar CR": "/img/image-solid.png",
-        "Tech CR": "/img/image-solid.png",
-        "Niños CR": "/img/image-solid.png"
+        "Moda CR": "img/image-solid.png",
+        "Deportes CR": "img/image-solid.png",
+        "Zapatos CR": "img/image-solid.png",
+        "Belleza CR": "img/image-solid.png",
+        "Salud CR": "img/image-solid.png",
+        "Hogar CR": "img/image-solid.png",
+        "Tech CR": "img/image-solid.png",
+        "Niños CR": "img/image-solid.png"
     };
     // Retornar default si no existe
-    return imagenes[nombre] || "/img/image-solid.png";
+    return imagenes[nombre] || "img/image-solid.png";
 }
 
 // Export
