@@ -2,7 +2,7 @@ const noticiaDestacada = {
     titulo: "Consejos para comprar en línea de forma segura",
     autor: "Equipo de MarketPlace",
     fecha: "18/03/2026",
-    imagen: "/img/image-solid.png",
+    imagen: "img/image-solid.png",
     alt: "Imagen destacada Consejos para comprar en línea de forma segura",
     contenido: `Las compras en línea se han vuelto cada vez más populares debido a su comodidad
     y variedad de opciones. Sin embargo, también es importante tomar precauciones para garantizar
@@ -25,7 +25,7 @@ const noticias = [
         titulo: "Tendencias de moda que dominarán esta temporada",
         autor: "Equipo de MarketPlace",
         fecha: "05/04/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Tendencias de moda que dominarán esta temporada",
         contenido: `La moda continúa reinventándose con cada temporada, y este año destaca por la
         combinación de estilos clásicos con toques modernos. Los colores neutros como beige, blanco y
@@ -47,7 +47,7 @@ const noticias = [
         titulo: "Cómo elegir el calzado perfecto para tu día a día",
         autor: "Equipo de MarketPlace",
         fecha: "04/04/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Cómo elegir el calzado perfecto para tu día a día",
         contenido: `El calzado es uno de los elementos más importantes en cualquier outfit, ya que
         influye directamente en la comodidad y la salud de tus pies. Elegir el par adecuado implica
@@ -69,7 +69,7 @@ const noticias = [
         titulo: "Rutina básica de cuidado facial para principiantes",
         autor: "Equipo de MarketPlace",
         fecha: "03/04/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Rutina básica de cuidado facial para principiantes",
         contenido: `El cuidado facial es una parte esencial de la rutina diaria, pero muchas
         personas no saben por dónde empezar. Afortunadamente, una rutina básica puede ser simple y
@@ -91,7 +91,7 @@ const noticias = [
         titulo: "Hábitos saludables que puedes empezar hoy",
         autor: "Equipo de MarketPlace",
         fecha: "02/04/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Hábitos saludables que puedes empezar hoy",
         contenido: `Adoptar un estilo de vida saludable no tiene que ser complicado ni requerir
         cambios extremos. De hecho, pequeños hábitos diarios pueden generar un impacto significativo en
@@ -113,7 +113,7 @@ const noticias = [
         titulo: "Ideas prácticas para renovar tu hogar sin gastar mucho",
         autor: "Equipo de MarketPlace",
         fecha: "30/03/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Ideas prácticas para renovar tu hogar sin gastar mucho",
         contenido: `Renovar tu hogar no siempre implica realizar grandes inversiones. Con pequeños
         cambios estratégicos, es posible transformar los espacios y darles un aire fresco y moderno.
@@ -134,7 +134,7 @@ const noticias = [
         titulo: "Gadgets imprescindibles para facilitar tu vida diaria",
         autor: "Equipo de MarketPlace",
         fecha: "28/03/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Gadgets imprescindibles para facilitar tu vida diaria",
         contenido: `La tecnología ha revolucionado la forma en que vivimos, y cada vez existen más
         dispositivos diseñados para facilitar nuestras tareas cotidianas. Los gadgets se han convertido
@@ -156,7 +156,7 @@ const noticias = [
         titulo: "Cómo elegir productos seguros y educativos para niños",
         autor: "Equipo de MarketPlace",
         fecha: "20/03/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Cómo elegir productos seguros y educativos para niños",
         contenido: `Elegir productos para niños implica considerar tanto la seguridad como el valor
         educativo. Los artículos adecuados no solo deben ser seguros, sino también contribuir al
@@ -176,7 +176,7 @@ const noticias = [
         titulo: "Consejos para comprar en línea de forma segura",
         autor: "Equipo de MarketPlace",
         fecha: "18/03/2026",
-        imagen: "/img/image-solid.png",
+        imagen: "img/image-solid.png",
         alt: "Imagen Consejos para comprar en línea de forma segura",
         contenido: `Las compras en línea se han vuelto cada vez más populares debido a su comodidad
         y variedad de opciones. Sin embargo, también es importante tomar precauciones para garantizar
