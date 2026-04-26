@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.removeItem("carrito");
 
             setTimeout(() => {
-                window.location.href = "/HTML/es/catalogo.html";
+                window.location.href = "HTML/es/catalogo.html";
             }, 2000);
         });
     }

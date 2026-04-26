@@ -84,7 +84,7 @@ function renderItems(data, track, tipo) {
                     localStorage.setItem("productoSeleccionado", JSON.stringify(item));
 
                     // Redirigir al catálogo
-                    window.location.href = "/HTML/es/catalogo.html";
+                    window.location.href = "HTML/es/catalogo.html";
                 });
             }
         } else if (tipo === "vendedor") {
@@ -108,7 +108,7 @@ function renderItems(data, track, tipo) {
                 localStorage.setItem("tiendaSeleccionada", item.nombre);
 
                 // Redirigir al catálogo
-                window.location.href = "/HTML/es/catalogo.html";
+                window.location.href = "HTML/es/catalogo.html";
             });
         }
         else if (tipo === "noticia") {
@@ -128,7 +128,7 @@ function renderItems(data, track, tipo) {
                 localStorage.setItem("noticiaSeleccionada", JSON.stringify(item));
 
                 // Redirigir al blog
-                window.location.href = "/HTML/es/blog.html";
+                window.location.href = "HTML/es/blog.html";
             });
 
         }

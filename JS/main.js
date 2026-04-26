@@ -96,7 +96,7 @@ function activarBuscador() {
                     // Guardar producto en localStorage
                     localStorage.setItem("productoSeleccionado", JSON.stringify(producto));
                     // Ir al catálogo
-                    window.location.href = "/HTML/es/catalogo.html";
+                    window.location.href = "HTML/es/catalogo.html";
                 });
                 resultados.appendChild(item);
             }
@@ -117,7 +117,7 @@ function activarLogout() {
 
             mostraralerta("Sesión cerrada", "success");
             setTimeout(() => {
-                window.location.href = "/HTML/es/registro_login.html";
+                window.location.href = "HTML/es/registro_login.html";
             }, 2000);
         });
     }

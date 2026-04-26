@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             mostraralerta("¡Usuario creado con exito!", "success");
             setTimeout(() => {
-                window.location.href = "/HTML/es/registro_login.html";
+                window.location.href = "HTML/es/registro_login.html";
             }, 2000);
         } catch (error) {
             mostraralerta("¡No se ha podido crear el usuario!", "error");
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         mostraralerta("¡Inicio de sesión exitoso!", "success");
         setTimeout(() => {
-            window.location.href = "/HTML/es/index.html";
+            window.location.href = "HTML/es/index.html";
         }, 2000);
     });
 });

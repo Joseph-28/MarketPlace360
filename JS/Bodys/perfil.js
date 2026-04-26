@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!usuario) {
         mostraralerta("Debe iniciar sesión para cargar los datos", "error");
         setTimeout(() => {
-            window.location.href = "/HTML/es/registro_login.html";
+            window.location.href = "HTML/es/registro_login.html";
         }, 2000);
         return;
     }
