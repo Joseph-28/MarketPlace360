@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Perfil de Usuario</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/perfil.css">
+    <link rel="stylesheet" href="/CSS/tablas.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/perfil.js"></script>
+    <script src="/JS/tablas.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main class="perfil">
+        <h1>Perfil de Usuario</h1>
+        <h2>¡Bienvenido <span id="perfil_nombre_saludo"></span>!</h2>
+        <section class="contenedor_datos">
+            <!-- Datos personales -->
+            <section class="usuario">
+                <h2>Datos Personales</h2>
+                <i class="fa-solid fa-user"></i>
+
+                <article>
+                    <p><strong>Nombre:</strong> <span id="perfil_nombre"></span></p>
+                    <p><strong>Fecha de Nacimiento: </strong> <span id="perfil_fecha"></span></p>
+                    <p><strong>Correo:</strong> <span id="perfil_correo"></span></p>
+                    <p><strong>Número de Cédula:</strong> <span id="perfil_cedula"></span></p>
+                    <p><strong>Dirección:</strong> <span id="perfil_direccion"></span></p>
+                </article>
+
+                <a href="#" id="btn_editar">[Editar Datos]</a>
+            </section>
+            <!-- Preferencias -->
+            <section class="usuario">
+                <h2>Preferencias</h2>
+                <article>
+                    <p><strong>Idioma:</strong> <span id="perfil_idioma"></span></p>
+                    <p><strong>Método de pago:</strong> Tarjeta <span id="perfil_tarjeta"></span></p>
+                </article>
+                <a href="#" id="btn_preferencias">[Editar Preferencias]</a>
+            </section>
+        </section>
+        <!-- Historial -->
+        <section class="tabla">
+            <article class="tabla_header">
+                <h3>Historial de Pedidos</h3>
+                <span class="sub">Últimos pedidos</span>
+            </article>
+
+            <!-- Cabecera tipo tabla -->
+            <article class="fila grid_dinamico encabezado" style="--columnas: 4">
+                <span>Pedido</span>
+                <span>Fecha</span>
+                <span>Estado</span>
+                <span>Acciones</span>
+            </article>
+
+            <!-- Pedido -->
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#001</span>
+                <span>00/00/00</span>
+                <span class="estado enviado">Enviado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                </article>
+            </article>
+
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#002</span>
+                <span>00/00/00</span>
+                <span class="estado completado">Completado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                    <button class="btn_outline">Reseñar</button>
+                </article>
+            </article>
+
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#003</span>
+                <span>00/00/00</span>
+                <span class="estado completado">Completado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                    <button class="btn_outline">Reseñar</button>
+                </article>
+            </article>
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#004</span>
+                <span>00/00/00</span>
+                <span class="estado completado">Completado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                    <button class="btn_outline">Reseñar</button>
+                </article>
+            </article>
+
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#005</span>
+                <span>00/00/00</span>
+                <span class="estado completado">Completado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                    <button class="btn_outline">Reseñar</button>
+                </article>
+            </article>
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#006</span>
+                <span>00/00/00</span>
+                <span class="estado completado">Completado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                    <button class="btn_outline">Reseñar</button>
+                </article>
+            </article>
+
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <span>#007</span>
+                <span>00/00/00</span>
+                <span class="estado completado">Completado</span>
+                <article class="acciones">
+                    <button>Detalles</button>
+                    <button class="btn_outline">Reseñar</button>
+                </article>
+            </article>
+            <!-- Paginación -->
+            <section id="paginacion" class="paginacion">
+                <nav aria-label="Paginación">
+                    <ul>
+                        <li><a href="#">Anterior</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+    <!-- Modal Editar Datos-->
+    <section id="modal_editar" class="modal">
+        <section class="modal_contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form id="form_editar">
+                <label>Nombre</label>
+                <input type="text" id="edit_nombre" required>
+
+                <label>Correo</label>
+                <input type="email" id="edit_correo" required>
+
+                <label>Cédula</label>
+                <input type="text" id="edit_cedula" required>
+
+                <label>Fecha de Nacimiento</label>
+                <input type="date" id="edit_fecha">
+
+                <label>Dirección</label>
+                <input type="text" id="edit_direccion" required>
+
+                <label>
+                    <input type="checkbox" id="edit_boletin">
+                    Suscribirse al boletín
+                </label>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+    </section>
+    <!-- Modal Editar Preferencias-->
+    <section id="modal_preferencias" class="modal">
+        <section class="modal_contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Preferencias de Usuario</h2>
+            <form id="form_preferencias">
+                <label>Idioma</label>
+                <select id="edit_idioma">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+
+                <label>Número de Tarjeta</label>
+                <input type="text" id="tarjeta_numero" maxlength="16" placeholder="0000-0000-0000-0000">
+
+                <button type="submit">Actualizar Preferencias</button>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>

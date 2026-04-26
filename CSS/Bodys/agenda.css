@@ -1,0 +1,229 @@
+/*Cuerpo de agenda.html*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*Todos los eventos*/
+.agenda_eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+    text-align: left;
+    align-items: center;
+}
+
+/*Cada evento*/
+.evento {
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    max-height: 250px;
+    max-width: 600px;
+    align-items: center;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.evento:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-principal);
+}
+
+.evento h2 {
+    margin: 0.7rem 0;
+}
+
+.evento .descripcion {
+    margin-bottom: 1rem;
+}
+
+.evento .info {
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+/*Botón de reservar lugar*/
+.btn_reservar {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn_reservar:hover {
+    background-color: var(--color-terciario);
+}
+
+/*Formulario*/
+.agenda_formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.agenda_formulario form {
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.agenda_formulario fieldset {
+    border: 1px solid var(--color-principal);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.agenda_formulario legend {
+    font-weight: bold;
+}
+
+.agenda_formulario label {
+    display: block;
+    text-align: left;
+}
+
+.agenda_formulario input,
+.agenda_formulario select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* En caso de usuario activo */
+.input_bloqueado {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/*Efecto hover a los inputs*/
+.consulta_formulario textarea:hover,
+.consulta_formulario input:hover {
+    border-color: var(--color-principal);
+}
+
+.agenda_formulario button {
+    margin-top: 15px;
+}
+
+
+/*Movimiento suave al clickar*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*== Responsive ==*/
+/* Tamaño 1024 */
+@media (max-width: 1024px) {
+    body .evento {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    body .agenda_formulario form {
+        min-width: unset;
+        width: 90%;
+    }
+}
+
+/* Tamaño 768 */
+@media (max-width: 768px) {
+    body .agenda_eventos {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    body .evento {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+        min-height: auto;
+        max-height: none;
+
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    body .evento h2 {
+        font-size: 1rem;
+    }
+
+    body .evento .descripcion {
+        font-size: 0.9rem;
+    }
+
+    body .evento .info {
+        font-size: 0.8rem;
+    }
+
+    body .btn_reservar {
+        width: 100%;
+        text-align: center;
+    }
+
+    body .agenda_formulario {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    body .agenda_formulario form {
+        width: 95%;
+        min-width: unset;
+    }
+
+    body .agenda_formulario fieldset {
+        padding: 1rem;
+    }
+
+    body .agenda_formulario input,
+    body .agenda_formulario select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tamaño 480 */
+@media (max-width: 480px) {
+
+    body .evento {
+        padding: 10px;
+    }
+
+    body .evento h2 {
+        font-size: 0.9rem;
+    }
+
+    body .evento .descripcion {
+        font-size: 0.85rem;
+    }
+
+    body .evento .info {
+        font-size: 0.75rem;
+    }
+
+    body .btn_reservar {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    body .agenda_formulario fieldset {
+        padding: 0.8rem;
+    }
+}

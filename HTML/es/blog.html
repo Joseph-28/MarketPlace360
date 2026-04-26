@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Blog y Noticias</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/blog.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/noticias.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/blog.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main class="blog">
+        <!-- Blog y Noticas -->
+        <h1>Blog y Noticias</h1>
+        <h2>Mantente informado sobre novedades y noticas</h2>
+        <!-- Noticias Destacada -->
+        <section>
+            <h3>Noticia Destacada</h3>
+            <h4>La noticia más relevante</h4>
+            <article id="noticia_destacada"></article>
+        </section>
+        <!-- Últimas publicaciones -->
+        <section id="blog">
+            <h2>Últimas publicaciones</h2>
+            <h3>Publicaciones</h3>
+            <article id="contenedor_noticias"></article>
+        </section>
+        <!-- Paginación -->
+        <section id="paginacion" class="paginacion">
+            <nav aria-label="Paginación">
+                <ul>
+                    <li><a href="#">Anterior</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Popup -->
+    <section id="modal" class="modal">
+        <section class="modal_contenido">
+            <span class="cerrar">&times;</span>
+            <h2 id="modal_titulo"></h2>
+            <p id="modal_texto"></p>
+            <img id="modal_imagen" src="" alt="" width="256"/>
+        </section>
+    </section>
+</body>
+
+</html>

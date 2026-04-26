@@ -1,0 +1,229 @@
+.catalogo {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.catalogo h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+fieldset {
+    border-color: var(--color-principal);
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+#filtro_marcas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+/* Contenido derecha */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+}
+
+.filtros-izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+.ordenar input[type="radio"] {
+    display: none;
+}
+
+
+/* Hacer botones visuales */
+.ordenar_opciones label {
+    padding: 0.5rem 2rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.ordenar_opciones label:hover {
+    background: var(--color-secundario);
+    color: white;
+    border-color: var(--color-secundario)
+}
+
+.ordenar_opciones label:has(input:checked) {
+    background: var(--color-terciario);
+    color: white;
+    border-color: var(--color-terciario);
+}
+
+.ordenar_opciones span {
+    display: inline-block;
+    padding: 0.1rem;
+    border-radius: 20px;
+}
+
+/* Ordenar filtro */
+.ordenar {
+    background: var(--color-principal);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--color-blanco);
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ordenar select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+/* Producto individual */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-principal);
+}
+
+.producto button {
+    margin-top: auto;
+}
+
+.producto .info {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor productos */
+.productos-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/*== Responsive ==*/
+/* Tamaño 1024 */
+@media (max-width: 1024px) {
+
+    .catalogo {
+        grid-template-columns: 200px 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .ordenar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .ordenar_opciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ordenar_opciones label {
+        flex: 0 1 auto; 
+        white-space: nowrap;
+    }
+
+    .productos {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+/* Tamaño 768 */
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .catalogo > * {
+        min-width: 0;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr !important; 
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .producto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* Tamaño 480px */
+@media (max-width: 480px) {
+
+    .catalogo {
+        padding: 0.8rem;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .ordenar_opciones label {
+        min-width: 100%;
+    }
+
+    .producto {
+        padding: 0.8rem;
+    }
+}

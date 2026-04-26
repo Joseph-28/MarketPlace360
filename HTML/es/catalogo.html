@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <title>MarketPlace 360 | Catalogo</title>
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/catalogo.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/catalogo.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main class="catalogo">
+        <h1>Catálogo de productos</h1>
+        <!-- Filtros -->
+        <aside>
+            <h2>Filtros de búsqueda</h2>
+            <!-- Precio -->
+            <form>
+                <!-- Filtros izquierda -->
+                <section class="filtros-izquierda">
+                    <!-- Filtro precios -->
+                    <fieldset>
+                        <legend>Precio</legend>
+
+                        <input type="range" id="precio" name="precio">
+                        <p id="precio_valor"></p>
+                    </fieldset>
+
+                    <!-- Categorías -->
+                    <fieldset>
+                        <legend>Categoría</legend>
+
+                        <label><input type="checkbox" name="categoria" value="Moda"> Moda</label>
+                        <label><input type="checkbox" name="categoria" value="Calzado"> Calzado</label>
+                        <label><input type="checkbox" name="categoria" value="Belleza"> Belleza</label>
+                        <label><input type="checkbox" name="categoria" value="Salud"> Salud</label>
+                        <label><input type="checkbox" name="categoria" value="Hogar"> Hogar</label>
+                        <label><input type="checkbox" name="categoria" value="Tecnología"> Tecnología</label>
+                        <label><input type="checkbox" name="categoria" value="Niños"> Niños</label>
+                    </fieldset>
+                    <!-- Vendedores -->
+                    <fieldset>
+                        <legend>Vendedores</legend>
+                        <section id="filtro_tiendas"></section>
+                    </fieldset>
+                    <!-- Marcas -->
+                    <fieldset>
+                        <legend>Marca</legend>
+                        <section id="filtro_marcas"></section>
+                    </fieldset>
+                </section>
+            </form>
+        </aside>
+        <section class="contenido">
+            <!-- Busqueda -->
+            <section class="ordenar">
+                <section class="ordenar_opciones">
+                    <label>
+                        <input type="radio" name="orden" value="nuevo">
+                        <span>Nuevo</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="orden" value="desc">
+                        <span>Precio (De mayor a menor)</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="orden" value="asc">
+                        <span>Precio (De menor a mayor)</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="orden" value="valorados">
+                        <span>Valorados</span>
+                    </label>
+                </section>
+            </section>
+            <!-- Lista de productos cargados dinamicamente-->
+            <section class="productos"></section>
+
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Popup -->
+    <section id="modal" class="modal modal_ancho">
+        <section class="modal_contenido">
+            <span class="cerrar">&times;</span>
+
+            <img id="modal_imagen" src="" alt="">
+            <section class="modal_info">
+                <h2><strong id="modal_titulo"></strong></h2>
+                <p id="modal_precio"></p>
+                <p><strong>Fecha de ingreso:</strong> <span id="modal_fecha"></span></p>
+                <p id="modal_texto"></p>
+
+                <p><strong>Tamaño:</strong> <span id="modal_tamano"></span></p>
+                <p><strong>Colores:</strong> <span id="modal_colores"></span></p>
+                <p><strong>Marca:</strong> <span id="modal_marca"></span></p>
+                <p><strong>Tienda:</strong> <span id="modal_tienda"></span></p>
+                <p><strong>Disponibles:</strong> <span id="modal_stock"></span></p>
+                <p><strong>Valoración:</strong> <span id="modal_valoracion"></span></p>
+
+                <select id="modal_cantidad"></select>
+                <button id="agregar_carrito">Agregar al carrito</button>
+            </section>
+        </section>
+    </section>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

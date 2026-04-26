@@ -1,0 +1,45 @@
+.sobre_contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+    place-items: center;
+}
+
+.sobre_contenedor section {
+    max-width: 500px;
+    min-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/*Movimiento suave al clickar*/
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .sobre_contenedor section {
+        max-width: 350px;
+        min-width: 350px;
+    }
+}
+
+/* Tamaño 480 */
+@media (max-width: 480px) {
+    .sobre_contenedor section {
+        max-width: 250px;
+        min-width: 250px;
+    }
+}

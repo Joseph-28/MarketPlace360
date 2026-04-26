@@ -1,0 +1,235 @@
+
+.resenias {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.resenias h3 {
+    grid-column: 1 / -1;
+    font-size: 1.8rem;
+}
+
+.resenias h4 {
+    grid-column: 1 / -1;
+    font-size: 1rem;
+}
+
+.resenias article {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resenias article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-principal);
+}
+
+.resenias figure {
+    background: #f4f4f4;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.resenias h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.resenias p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.estrellas_valoracion i{
+    color: gold;
+}
+/*Formulario*/
+.consulta_formulario {
+    background: #fff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.consulta_formulario fieldset {
+    border: 1px solid var(--color-principal);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.consulta_formulario legend {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.consulta_formulario input[type="text"],
+.consulta_formulario input[type="email"],
+.consulta_formulario textarea {
+    width: 100%; 
+    padding: 12px;
+    margin: 10px 0 0; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.consulta_formulario textarea {
+    resize: vertical; 
+}
+
+.consulta_formulario input:focus,
+.consulta_formulario textarea:focus {
+    outline: none;
+    border-color: var(--color-principal);
+}
+
+.estrellas {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+}
+.estrellas i {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    transition: 0.2s;
+}
+
+.estrellas i.activa {
+    color: gold;
+}
+/* En caso de usuario activo */
+.input_bloqueado {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+/*== Responsive ==*/
+/* Tamaño 1024 */
+@media (max-width: 1024px) {
+
+    .resenias {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .resenias h3 {
+        font-size: 1.6rem;
+    }
+
+    .resenias article {
+        padding: 1.2rem;
+    }
+
+    .resenias figure {
+        width: 90px;
+        height: 90px;
+    }
+
+    .consulta_formulario {
+        max-width: 500px;
+        padding: 25px;
+    }
+}
+/* Tamaño 768 */
+@media (max-width: 768px) {
+
+    .resenias {
+        padding: 1rem;
+        gap: 1rem;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resenias h3 {
+        font-size: 1.4rem;
+    }
+
+    .resenias h4 {
+        font-size: 0.9rem;
+    }
+
+    .resenias article {
+        padding: 1rem;
+    }
+
+    .resenias p {
+        font-size: 0.9rem;
+    }
+
+    .estrellas i {
+        font-size: 20px;
+    }
+
+    .consulta_formulario {
+        width: 100%;
+        padding: 20px;
+        margin: 15px auto;
+    }
+}
+/* Tamaño 480 */
+@media (max-width: 480px) {
+
+    .resenias {
+        padding: 0.8rem;
+        grid-template-columns: 1fr;
+    }
+
+    .resenias article {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .resenias h3 {
+        font-size: 1.2rem;
+    }
+
+    .resenias h4 {
+        font-size: 0.85rem;
+    }
+
+    .resenias figure {
+        width: 80px;
+        height: 80px;
+    }
+
+    .estrellas i {
+        font-size: 18px;
+    }
+
+    .consulta_formulario {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .consulta_formulario legend {
+        font-size: 1rem;
+    }
+}

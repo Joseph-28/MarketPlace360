@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Registro e Inicio de Sesión</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/registro_login.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/registro_login.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <!-- Registro e Inicio de Sesión -->
+        <h1>Registro e Inicio de Sesión</h1>
+        <section class="registro_login">
+            <!-- Botones de cambio -->
+            <section class="tabs">
+                <button class="tab activo" data-target="login">Iniciar Sesión</button>
+                <button class="tab" data-target="registro">Registrarse</button>
+            </section>
+            <!-- Contenedor de formularios -->
+            <section class="contenedor_formularios">
+                <!-- Inicio de sesión -->
+                <section class="formulario activo" id="form_login">
+                    <h2>Acceso a la cuenta</h2>
+                    <form>
+                        <label for="login_correo">Correo electrónico</label>
+                        <input type="email" id="login_correo" name="correo" placeholder="Correo Electronico" required>
+
+                        <label for="login_contraseña">Contraseña</label>
+                        <article class="cambio_contrasena_contenedor">
+                            <input type="password" class="input-password" id="login_contraseña" required>
+                            <i class="fa-solid fa-eye cambio_contrasena_icono"></i>
+                        </article>
+                        <button type="submit" id="btn_inicio">Inicio de Sesión</button>
+                    </form>
+                    <a id="btn_olvidar_contrasena">¿Olvidaste tu contraseña?</a>
+                </section>
+                <!-- Registro -->
+                <section class="formulario" id="form_registro">
+                    <h2>¡Crea tu cuenta!</h2>
+                    <form>
+                        <label for="registro_nombre">Nombre Completo</label>
+                        <input type="text" id="registro_nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        <label for="registro_cedula">Número de cédula</label>
+                        <!-- Comentario para la profesora -->
+                        <!-- Dejaba ingresar "e" porque algunos navegadores lo detecta como notación científica-->
+                        <input type="number" id="registro_cedula" name="cedula"
+                            placeholder="Ingrese su número de cédula"
+                            onkeydown="javascript: return ['e', 'E', '+', '-'].includes(event.key) ? false : true"
+                            required>
+
+                        <label for="registro_fecha">Fecha de Nacimiento</label>
+                        <input type="date" id="registro_fecha" name="fecha"
+                            placeholder="Seleccione su fecha de nacimiento" required>
+
+                        <label for="registro_direccion">Dirección</label>
+                        <input type="text" id="registro_direccion" name="direccion" placeholder="Ingrese su dirección"
+                            required>
+
+                        <label for="registro_correo">Correo electrónico</label>
+                        <input type="email" id="registro_correo" name="correo" placeholder="Correo Electrónico"
+                            required>
+
+                        <label for="registro_confirmar_correo">Confirme el Correo electrónico</label>
+                        <input type="email" id="registro_confirmar_correo" name="confirmar_correo"
+                            placeholder="Confirme su Correo Electrónico" required>
+
+                        <label for="registro_contraseña">Contraseña</label>
+                        <article class="cambio_contrasena_contenedor">
+                            <input type="password" class="input-password" id="registro_contraseña" required
+                                placeholder="Ingrese una contraseña">
+                            <i class="fa-solid fa-eye cambio_contrasena_icono"></i>
+                        </article>
+
+                        <label for="registro_confirmar_contraseña">Confirme la Contraseña</label>
+                        <article class="cambio_contrasena_contenedor">
+                            <input type="password" class="input-password" id="registro_confirmar_contraseña" required
+                                placeholder="Confirme su contraseña">
+                            <i class="fa-solid fa-eye cambio_contrasena_icono"></i>
+                        </article>
+
+                        <label>¡Suscribirse al boletín semanal de ofertas y noticias!
+                            <input type="checkbox" name="boletin" id="boletin"></label>
+
+                        <button type="submit" id="btn_registro">Registrarse</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

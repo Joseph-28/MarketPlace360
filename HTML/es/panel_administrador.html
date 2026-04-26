@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Panel de Administrador</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/tablas.css">
+    <link rel="stylesheet" href="/CSS/Bodys/panel_administrador.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/tablas.js"></script>
+    <script src="/JS/main.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h1>Panel de Administrador</h1>
+        <!-- Categorías del panel de admnistracion -->
+        <section class="opciones">
+            <nav aria-label="Navegación del panel" class="ordenar_opciones">
+                <ul>
+                    <li><a href="#tabla_usuarios">Usuarios</a></li>
+                    <li><a href="#tabla_transacciones">Transacciones</a></li>
+                    <li><a href="#tabla_productos">Productos</a></li>
+                    <li><a href="#tabla_promociones">Promociones</a></li>
+                    <li><a href="#tabla_eventos">Eventos</a></li>
+                    <li><a href="#tabla_reportes">Reportes</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="tablas">
+            <!-- Usuarios -->
+            <section class="tabla" id="tabla_usuarios">
+                <section class="tabla_header">
+                    <h3>Usuarios</h3>
+                    <span class="sub">Todos los Usuarios</span>
+                </section>
+                <!-- Encabezado -->
+                <article class="fila grid_dinamico encabezado" style="--columnas: 5">
+                    <span>Nombre</span>
+                    <span>Correo</span>
+                    <span>Rol</span>
+                    <span>Estado</span>
+                    <span>Editar</span>
+                </article>
+                <!-- Usuarios -->
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Nombre #1</p>
+                    <p>correo@ejemplo.com</p>
+                    <p>Cliente</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Nombre #2</p>
+                    <p>correo@ejemplo.com</p>
+                    <p>Vendedor</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Nombre #3</p>
+                    <p>correo@ejemplo.com</p>
+                    <p>Administrador</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Nombre #4</p>
+                    <p>correo@ejemplo.com</p>
+                    <p>Cliente</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Nombre #5</p>
+                    <p>correo@ejemplo.com</p>
+                    <p>Vendedor</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Nombre #6</p>
+                    <p>correo@ejemplo.com</p>
+                    <p>Administrador</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <!-- Gestión de Transacciones -->
+            <section class="tabla" id="tabla_transacciones">
+                <section class="tabla_header">
+                    <h3>Transacciones</h3>
+                    <span class="sub">Últimas Transacciones</span>
+                </section>
+                <!-- Encabezado -->
+                <article class="fila grid_dinamico encabezado" style="--columnas: 8">
+                    <span>ID</span>
+                    <span>Fecha</span>
+                    <span>Cliente</span>
+                    <span>Vendedor</span>
+                    <span>Productos</span>
+                    <span>Monto Total</span>
+                    <span>Estado</span>
+                    <span>Reembolsar</span>
+                </article>
+                <!-- Transacciones -->
+                <article class="fila grid_dinamico" style="--columnas: 8">
+                    <p>01</p>
+                    <p>20/03/2026</p>
+                    <p>Cliente Nombre</p>
+                    <p>Vendedor Nombre</p>
+                    <p>Productos...</p>
+                    <p>999.999</p>
+                    <p>En proceso</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 8">
+                    <p>02</p>
+                    <p>20/03/2026</p>
+                    <p>Cliente Nombre</p>
+                    <p>Vendedor Nombre</p>
+                    <p>Productos...</p>
+                    <p>999.999</p>
+                    <p>Completado</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <!-- Gestión de productos -->
+            <section class="tabla" id="tabla_productos">
+                <section class="tabla_header">
+                    <h3>Gestión de productos</h3>
+                    <span class="sub">Todos los productos</span>
+                </section>
+                <!-- Encabezado -->
+                <section class="fila grid_dinamico encabezado" style="--columnas: 5">
+                    <span>Producto</span>
+                    <span>Precio</span>
+                    <span>Vendedor</span>
+                    <span>Editar</span>
+                    <span>Eliminar</span>
+                </section>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Producto Nombre #1</p>
+                    <p>999.999</p>
+                    <p>Vendedor</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Producto Nombre #2</p>
+                    <p>999.999</p>
+                    <p>Vendedor</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <!-- Gestión de promociones -->
+            <section class="tabla" id="tabla_promociones">
+                <section class="header_contenedor">
+                    <section class="tabla_header">
+                        <h3>Gestión de promociones</h3>
+                    </section>
+                    <!-- Añadir promocion -->
+                    <details class="detalle_form">
+                        <summary>
+                            Agregar nueva promoción
+                            <i class="fa-regular fa-square-plus icono"></i>
+                        </summary>
+                        <form class="form_desplegable">
+                            <fieldset>
+                                <legend>Nueva promoción</legend>
+
+                                <label for="nombre_evento">Nombre de la promoción:</label>
+                                <input type="text" id="nombre_evento" name="nombre_evento"
+                                    placeholder="Ingre el nombre de la promoción." required>
+
+                                <label for="fecha_inicio">Fecha Inicio:</label>
+                                <input type="date" id="fecha_inicio" name="fecha_inicio"
+                                    placeholder="Seleccione la fecha de inicio." required>
+
+                                <label for="fecha_fin">Fecha Fin:</label>
+                                <input type="date" id="fecha_fin" name="fecha_fin"
+                                    placeholder="Seleccione la fecha final." required> 
+
+                                <label for="evento_detalles">Detalles:</label>
+                                <input type="text" id="evento_detalles" name="evento_detalles" 
+                                placeholder="Ingrese los detalles." required> 
+
+                                <button type="submit" class="btn_default">Guardar promoción</button>
+                            </fieldset>
+                        </form>
+                    </details>
+                </section>
+                <!-- Encabezado -->
+                <section class="fila grid_dinamico encabezado" style="--columnas: 4">
+                    <span>Promoción</span>
+                    <span>Estado</span>
+                    <span>Editar</span>
+                    <span>Eliminar</span>
+                </section>
+                <article class="fila grid_dinamico" style="--columnas: 4">
+                    <p>Promoción Nombre #1</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <!-- Eventos -->
+            <section class="tabla" id="tabla_eventos">
+                <section class="tabla_header">
+                    <h3>Eventos</h3>
+                    <!-- Añadir eventos -->
+                    <details class="detalle_form">
+                        <summary>
+                            Agregar nuevo evento
+                            <i class="fa-regular fa-square-plus icono"></i>
+                        </summary>
+                        <form class="form_desplegable">
+                            <fieldset>
+                                <legend>Nueva evento</legend>
+
+                                <label for="nombre_evento">Nombre del evento:</label>
+                                <input type="text" id="nombre_evento" name="nombre_evento" 
+                                placeholder="Ingrese el nombre del evento." required>
+
+                                <label for="fecha_evento">Fecha:</label>
+                                <input type="date" id="fecha_evento" name="fecha_evento" 
+                                placeholder="Seleccione la fecha del evento." required>
+
+                                <label for="evento_hora">Hora:</label>
+                                <input type="time" id="evento_hora" name="evento_hora" 
+                                placeholder="Seleccione la hora del evento." required>
+
+                                <label for="evento_detalles">Detalles:</label>
+                                <input type="text" id="evento_detalles" name="evento_detalles"
+                                placeholder="Ingrese los detalles del evento." required>
+
+                                <label for="fotografía_evento">Fotografía promocional de evento:</label>
+                                <input type="file" id="fotografía_producto" name="fotografía_evento" 
+                                placeholder="Adjunte una fotografía del evento" required>
+
+                                <button type="submit" class="btn_default">Guardar evento</button>
+                            </fieldset>
+                        </form>
+                    </details>
+                </section>
+                <!-- Encabezado -->
+                <article class="fila grid_dinamico encabezado" style="--columnas: 4">
+                    <span>Eventos</span>
+                    <span>Estado</span>
+                    <span>Editar</span>
+                    <span>Eliminar</span>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 4">
+                    <p>Evento Nombre #1</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 4">
+                    <p>Evento Nombre #2</p>
+                    <p>Activo</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <!-- Solicitudes para Nuevos Vendedores -->
+            <section class="tabla" id="tabla_vendedores">
+                <section class="tabla_header">
+                    <h3>Nuevos Vendedores</h3>
+                </section>
+                <!-- Encabezado -->
+                <section class="fila grid_dinamico encabezado" style="--columnas: 6">
+                    <span>Nombre</span>
+                    <span>Correo</span>
+                    <span>Dirección</span>
+                    <span>Categoría</span>
+                    <span>Aceptar</span>
+                    <span>Rechazar</span>
+                </section>
+                <article class="fila grid_dinamico" style="--columnas: 6">
+                    <p>Nombre de la tienda #1</p>
+                    <p>correo@gmail.com</p>
+                    <p>https://ejemplo.com</p>
+                    <p>Tecnología</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-solid fa-check"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <!-- Reporte -->
+            <section class="tabla" id="tabla_reportes">
+                <section class="tabla_header">
+                    <h3>Reporte</h3>
+                </section>
+                <section class="fila grid_dinamico encabezado" style="--columnas: 3">
+                    <span>Ventas totales</span>
+                    <span>Usuarios activos</span>
+                    <span>Productos más vendidos</span>
+                </section>
+                <article class="fila grid_dinamico" style="--columnas: 3">
+                    <p>1.000.000</p>
+                    <p>300.000</p>
+                    <p>Zapatillas deportivas</p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

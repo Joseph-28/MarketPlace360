@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Detalles Producto</title>
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/vendedor_formulario.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h1>Vende con Nosotros</h1>
+        <h2>Si estas interesado en vender en nuestra tienda completa los siguientes datos</h2>
+        <section class="vendedor_formulario">
+            <form>
+                <fieldset>
+                    <legend>Datos del nuevo vendedor</legend>
+
+                    <label for="nombre_empresa">Nombre de la empresa</label>
+                    <input type="text" id="nombre_empresa" name="nombre_empresa" required
+                    placeholder="Nombre de la empresa...">
+
+                    <label for="Correo_empresa">Correo de la empresa</label>
+                    <input type="email" id="correo_empresa" name="correo_empresa" required
+                    placeholder="ejemplo@gmail.com">
+
+                    <label for="link_empresa">Link a página web o red social principal</label>
+                    <input type="url" id="link_empresa" name="link_empresa" required
+                    placeholder="https://ejemplo.com">
+
+                    <label for="categoria_empresa">Principal categoría de venta</label>
+                    <select id="categoria_empresa" required>
+                        <option value="" disabled selected>Seleccione la categoría</option>
+                        <option value="Moda">Moda</option>
+                        <option value="Calzado">Calzado</option>
+                        <option value="Belleza">Belleza</option>
+                        <option value="Salud">Salud</option>
+                        <option value="Hogar">Hogar</option>
+                        <option value="Tecnología">Tecnología</option>
+                        <option value="Niños">Niños</option>
+                    </select>
+
+                    <label for="logo_empresa">Logo de la empresa</label>
+                    <input type="file" id="logo_empresa" name="logo_empresa" required>
+                </fieldset>
+                <button type="submit" class="btn_default">Solicitar perfil de vendedor</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

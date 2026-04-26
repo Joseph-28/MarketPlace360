@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Panel de Vendedor</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/tablas.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/tablas.js"></script>
+    <script src="/JS/main.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h1>Panel de Vendedor</h1>
+        <h2>Productos</h2>
+        <!-- Productos -->
+        <section class="tablas">
+            <section class="tabla">
+                <section class="tabla_header">
+                    <h3>Gestión de productos</h3>
+                    <!-- Añadir productos -->
+                    <details class="detalle_form">
+                        <summary>
+                            Agregar producto
+                            <i class="fa-regular fa-square-plus icono"></i>
+                        </summary>
+                        <form class="form_desplegable">
+                            <fieldset>
+                                <legend>Nuevo producto</legend>
+
+                                <label for="nombre_producto">Nombre del producto:</label>
+                                <input type="text" id="nombre_producto" name="nombre_producto"
+                                    placeholder="Ingrese el nombre del producto:" required>
+
+                                <label for="categoria_producto">Categoría:</label>
+                                <input type="text" id="categoria_producto" name="categoria_producto"
+                                    placeholder="Ingrese la categoría:" required>
+
+                                <label for="precio_producto">Precio:</label>
+                                <input type="number" id="precio_producto" name="precio_producto" min="500"
+                                    placeholder="Ingrese el precio del producto: (Minimo 500)" 
+                                    onkeydown="javascript: return ['e', 'E', '+', '-'].includes(event.key) ? false : true"
+                                    required>
+
+                                <label for="inventario_producto">Inventario:</label>
+                                <input type="number" id="inventario_producto" name="inventario_producto" min="1"
+                                    placeholder="Ingrese el inventario del producto: (Minimo 1)" 
+                                    onkeydown="javascript: return ['e', 'E', '+', '-'].includes(event.key) ? false : true"
+                                    required>
+
+                                <label for="variaciones_producto">Variaciones:</label>
+                                <input type="text" id="variaciones_producto" name="variaciones_producto" 
+                                placeholder="Ingrese las variaciones: (Separadas por Comas)" required>
+
+                                <label for="tallas_producto">Tallas:</label>
+                                <input type="text" id="tallas_producto" name="tallas_producto" 
+                                placeholder="Ingrese las tallas disponibles" required>
+
+                                <label for="colores_producto">Colores:</label>
+                                <input type="text" id="colores_producto" name="colores_producto" 
+                                placeholder="Ingrese los colores disponibles" required>
+
+                                <label for="fotografía_producto">Fotografía del producto:</label>
+                                <input type="file" id="fotografía_producto" name="fotografía_producto" 
+                                placeholder="Adjunte una fotografía del producto" required>
+
+                                <button type="submit" id="btn_default">Guardar producto</button>
+                            </fieldset>
+                        </form>
+                    </details>
+                </section>
+                <!-- Encabezado -->
+                <section class="fila grid_dinamico encabezado" style="--columnas: 5">
+                    <span>Producto</span>
+                    <span>Precio</span>
+                    <span>Inventario</span>
+                    <span>Editar</span>
+                    <span>Eliminar</span>
+                </section>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Producto Nombre #1</p>
+                    <p>$999.999</p>
+                    <p>999</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Producto Nombre #2</p>
+                    <p>$999.999</p>
+                    <p>999</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <article class="fila grid_dinamico" style="--columnas: 5">
+                    <p>Producto Nombre #3</p>
+                    <p>$999.999</p>
+                    <p>999</p>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </figure>
+                </article>
+                <!-- Paginación -->
+                <section id="paginacion" class="paginacion">
+                    <nav aria-label="Paginación">
+                        <ul>
+                            <li><a href="#">Anterior</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        </section>
+        <!-- Pedidos Realizados -->
+        <section class="tabla">
+            <section class="tabla_header">
+                <h3>Gestión de pedidos</h3>
+            </section>
+            <!-- Encabezado -->
+            <section class="fila grid_dinamico encabezado" style="--columnas: 4">
+                <span>Pedido</span>
+                <span>Cliente</span>
+                <span>Estado</span>
+                <span>Editar</span>
+            </section>
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <p>#111</p>
+                <p>Joseph González Herrera</p>
+                <p>Pendiente</p>
+                <figure>
+                    <a href="#">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </a>
+                </figure>
+            </article>
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <p>#111</p>
+                <p>Joseph González Herrera</p>
+                <p>Pendiente</p>
+                <figure>
+                    <a href="#">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </a>
+                </figure>
+            </article>
+            <article class="fila grid_dinamico" style="--columnas: 4">
+                <p>#111</p>
+                <p>Joseph González Herrera</p>
+                <p>Pendiente</p>
+                <figure>
+                    <a href="#">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </a>
+                </figure>
+            </article>
+            <!-- Paginación -->
+            <section id="paginacion" class="paginacion">
+                <nav aria-label="Paginación">
+                    <ul>
+                        <li><a href="#">Anterior</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        <!-- Estadísticas -->
+        <section class="tabla">
+            <section class="tabla_header">
+                <h3>Estadísticas generales de los productos</h3>
+            </section>
+            <!-- Encabezado -->
+            <section class="fila grid_dinamico encabezado" style="--columnas: 3">
+                <span>Nombre</span>
+                <span>Ventas</span>
+                <span>Valoración Promedio</span>
+            </section>
+            <article class="fila grid_dinamico" style="--columnas: 3">
+                <p>Producto Nombre #1</p>
+                <p>10</p>
+                <p>5/5
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </article>
+            <article class="fila grid_dinamico" style="--columnas: 3">
+                <p>Producto Nombre #2</p>
+                <p>10</p>
+                <p>4/5
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </article>
+            <article class="fila grid_dinamico" style="--columnas: 3">
+                <p>Producto Nombre #3</p>
+                <p>10</p>
+                <p>4/5
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </article>
+            <!-- Paginación -->
+            <section id="paginacion" class="paginacion">
+                <nav aria-label="Paginación">
+                    <ul>
+                        <li><a href="#">Anterior</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Valoracion de Usuarios</title>
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/valoracion.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/valoracion.js"></script>
+    <script src="/JS/resenias.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <!-- Valoracion de Usuarios -->
+        <h1>Valoración de Usuarios</h1>
+        <h2>Experencias de nuestros clientes</h2>
+        <section class="resenias" id="contenedor_resenias">
+            <h3>Últimas Reseñas</h3>
+            <h4>Experencias reales</h4>
+            <!-- Reseñas (cargadas dinamicamente) -->
+        </section>
+        <!-- Formulario -->
+        <h2>Deja tu valoración</h2>
+        <h3>Completa los datos requeridos</h3>
+        <section class="consulta_formulario">
+            <form>
+                <fieldset>
+                    <legend>Datos del usuario</legend>
+
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo:" required><br><br>
+
+                    <label for="correo">Correo electrónico de contacto:</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico:" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reseña</legend>
+
+                    <label for="resena">Titulo de la reseña:</label><br>
+                    <input type="text" id="resena" name="resena" placeholder="Ingrese el titulo de la reseña:" required><br><br>
+
+                    <label for="comentario">Pequeño Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Ingrese un pequeño comentario (máximo 300 caracteres):" maxlength="300" required></textarea><br><br>
+
+                    <section class="estrellas" id="estrellas">
+                        <i class="fa-regular fa-star" data-valor="1"></i>
+                        <i class="fa-regular fa-star" data-valor="2"></i>
+                        <i class="fa-regular fa-star" data-valor="3"></i>
+                        <i class="fa-regular fa-star" data-valor="4"></i>
+                        <i class="fa-regular fa-star" data-valor="5"></i>
+                    </section>
+
+                    <!-- valor oculto para el form -->
+                    <input type="hidden" id="calificacion" name="calificacion" required>
+                </fieldset>
+                <button type="submit" class="btn_default">Enviar reseña</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

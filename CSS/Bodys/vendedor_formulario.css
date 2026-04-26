@@ -1,0 +1,116 @@
+/* Formulario */
+.vendedor_formulario {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.vendedor_formulario input[type="text"],
+.vendedor_formulario input[type="email"],
+.vendedor_formulario input[type="url"],
+.vendedor_formulario select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.vendedor_formulario input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vendedor_formulario fieldset {
+    border: 1px solid var(--color-principal);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.vendedor_formulario legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/*== Responsive ==*/
+/* Tamaño 1024 */
+@media (max-width: 1024px) {
+
+    .vendedor_formulario {
+        max-width: 600px;
+        padding: 25px;
+    }
+
+    .vendedor_formulario legend {
+        font-size: 1.3rem;
+    }
+
+    .vendedor_formulario input,
+    .vendedor_formulario select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+/* Tamaño 768 */
+@media (max-width: 768px) {
+
+    .vendedor_formulario {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px auto;
+
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .vendedor_formulario fieldset {
+        padding: 15px;
+    }
+
+    .vendedor_formulario legend {
+        font-size: 1.2rem;
+    }
+
+    .vendedor_formulario input,
+    .vendedor_formulario select {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}
+/* Tamaño 480 */
+@media (max-width: 480px) {
+
+    .vendedor_formulario {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .vendedor_formulario fieldset {
+        padding: 12px;
+    }
+
+    .vendedor_formulario legend {
+        font-size: 1rem;
+    }
+
+    .vendedor_formulario input,
+    .vendedor_formulario select {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}

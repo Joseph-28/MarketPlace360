@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Panel de Vendedor</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/directorio_vendedores.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/vendedores.js"></script>
+    <script src="/JS/Bodys/directorio_vendedores.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main class="directorio">
+        <!-- Directorio de vendedores -->
+        <h1>Directorio de Vendedores</h1>
+        <h2>Explora las tiendas asociadas a MarketPlace 360</h2>
+        <section class="ordenar">
+            <h3>Categorías de nuestros vendedores</h3>
+            <!-- Categorías de vendedores -->
+            <section class="ordenar_opciones">
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="" checked>
+                    <span>Todos</span>
+                </label>
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Moda">
+                    <span>Moda</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Calzado">
+                    <span>Calzado</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Belleza">
+                    <span>Belleza</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Salud">
+                    <span>Salud</span>
+                </label>
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Hogar">
+                    <span>Hogar</span>
+                </label>
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Tecnología">
+                    <span>Tecnología</span>
+                </label>
+                <label>
+                    <input type="radio" name="categoria_vendedor" value="Niños">
+                    <span>Niños</span>
+                </label>
+
+            </section>
+        </section>
+        <!-- Vendedores -->
+        <section class="vendedores" id="contenedorVendedores">
+            <article class="vendedor">
+                <figure>
+                    <img src="/img/image-solid.png" alt="vendedor test" width="64">
+                </figure>
+                <h4>Vendedor Prueba</h4>
+                <p>Categoría: prueba</p>
+                <p class="estrellas">Calificación: estrella</p>
+                <a href="#" class="ver_productos">
+                    Ver productos
+                </a>
+            </article>
+        </section>
+        <!-- Paginación -->
+        <!-- 
+        <section class="paginacion">
+            <nav>
+                <ul>
+                    <li><a href="#">Anterior</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>...</li>
+                    <li><a href="#">67</a></li>
+                    <li><a href="#">68</a></li>
+                    <li><a href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+        </section>-->
+    </main>
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

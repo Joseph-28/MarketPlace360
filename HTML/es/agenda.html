@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Agenda y Promociones</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/agenda.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/agenda.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main class="agenda">
+        <!-- Agenda y Programación -->
+        <h1>Agenda y Programación</h1>
+        <h2>Consulta los próximos eventos del marketplace</h2>
+        <!-- Agenda -->
+        <section class="agenda_eventos">
+            <!-- Feria Virtual -->
+            <article class="evento">
+                <figure>
+                    <img src="/img/agenda/Feria_virtual.jpg" alt="Imagen de feria virtual de tecnología" width="128">
+                </figure>
+                <article class="evento_info">
+                    <h2><strong>Feria virtual de tecnología</strong></h2>
+                    <p class="info">
+                        <strong>Fecha: </strong> 30/04/20206 |
+                        <strong>Hora: </strong> 05:00pm |
+                        <strong>Lugar: </strong> Reunión Virtual
+                        <strong>Cupo máximo: </strong> 100
+                    </p>
+                    <p class="descripcion">Descubre nuevos productos y promociones exclusivas.</p>
+                    <a href="#form_reserva" class="btn_reservar" data-evento="Feria virtual de tecnologia">Reservar
+                        Lugar</a>
+                </article>
+            </article>
+            <!-- Camapaña de verano -->
+            <article class="evento">
+                <figure>
+                    <img src="/img/agenda/Capaña_verano.jpg" alt="Imagen de campaña de verano" width="128">
+                </figure>
+                <article class="evento_info">
+                    <h2><strong>Lanzamiento campaña de vereno</strong></h2>
+                    <p class="info">
+                        <strong>Fecha: </strong> 31/04/2026 |
+                        <strong>Hora: </strong> 10:00am |
+                        <strong>Lugar: </strong> Instalaciones en San José |
+                        <strong>Cupo máximo: </strong> 50
+                    </p>
+                    <p class="descripcion">Descubre los productos nuevos que vendrán a la tienda este verano y sus
+                        promociones.</p>
+                    <a href="#form_reserva" class="btn_reservar" data-evento="Lanzamiento campaña de verano">Reservar
+                        Lugar</a>
+                </article>
+            </article>
+            <!-- Seminario web para vendedores -->
+            <article class="evento">
+                <figure>
+                    <img src="/img/agenda/Seminario_web.jpg" alt="Imagen de seminario web" width="128">
+                </figure>
+                <article class="evento_info">
+                    <h2><strong>Seminario Web para Vendedores</strong></h2>
+                    <p class="info">
+                        <strong>Fecha: </strong> 10/05/2026 |
+                        <strong>Hora: </strong> 5:00pm |
+                        <strong>Lugar: </strong> Reunión Virtual |
+                        <strong>Cupo máximo: </strong> 100
+                    </p>
+                    <p class="descripcion">Llevar las cuentas no tiene por qué ser una pesadilla. Únete a nuestra sesión
+                        en vivo donde aprenderás a organizar tus finanzas desde cero, evitar multas innecesarias y
+                        dormir tranquilo por las noches.</p>
+                    <a href="#form_reserva" class="btn_reservar" data-evento="Seminario Web para vendedores">Reservar
+                        Lugar</a>
+                </article>
+            </article>
+            <!-- Formulario -->
+        </section>
+        <section id="form_reserva" class="agenda_formulario">
+            <h2>Reservar Lugar</h2>
+            <h3>Completa los datos requeridos</h3>
+            <form>
+                <fieldset>
+                    <legend>Datos del usuario</legend>
+
+                    <label for="nombre">Nombre completo</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo..." required
+                        minlength="5"><br><br>
+
+                    <label for="correo">Correo electrónico de contacto</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico..." required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reserva</legend>
+
+                    <label for="reserva">Evento a reservar</label><br>
+                    <select name="reserva" id="reserva">
+                        <option value="">Seleccionar evento</option>
+                        <option value="Feria virtual de tecnologia">Feria virtual de tecnología</option>
+                        <option value="Lanzamiento campaña de verano">Lanzamiento campaña de verano</option>
+                        <option value="Seminario Web para vendedores">Seminario Web para vendedores</option>
+                    </select>
+                </fieldset>
+                <button type="submit" class="btn_default">Solicitar reserva</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+.promociones {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.promociones h2 {
+    grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.promociones article {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promociones article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--color-principal);
+}
+
+.promociones figure {
+    background: #f4f4f4;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.promociones h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.promociones p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Boton de Accion */
+.promociones a {
+    display: inline-block;
+    background: var(--color-secundario);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.promociones a:hover {
+    background: var(--color-terciario);
+}
+/*== Responsive ==*/
+/* Tamaño 1024 */
+@media (max-width: 1024px) {
+
+    .promociones {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .promociones h2 {
+        font-size: 1.6rem;
+    }
+
+    .promociones article {
+        padding: 1.2rem;
+    }
+
+    .promociones figure {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* Tamaño 768 */
+@media (max-width: 768px) {
+
+    .promociones {
+        padding: 1rem;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promociones h2 {
+        font-size: 1.4rem;
+    }
+
+    .promociones article {
+        padding: 1rem;
+    }
+
+    .promociones h3 {
+        font-size: 1.1rem;
+    }
+
+    .promociones p {
+        font-size: 0.9rem;
+    }
+
+    .promociones a {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+/* Tamaño 480 */
+@media (max-width: 480px) {
+
+    .promociones {
+        padding: 0.8rem;
+        grid-template-columns: 1fr;
+    }
+
+    .promociones h2 {
+        font-size: 1.2rem;
+    }
+
+    .promociones article {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .promociones figure {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,119 @@
+/* Navegador */
+.opciones {
+    background: var(--color-principal);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--color-blanco);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opciones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.opciones ul li a {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none; 
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.opciones ul li a:hover {
+    background: var(--color-secundario);
+    color: white;
+    border-color: var(--color-secundario);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+html {
+    scroll-behavior: smooth;
+}
+/*== Responsive ==*/
+/* Tamaño 1024 */
+@media (max-width: 1024px) {
+
+    .opciones {
+        padding: 1.2rem;
+    }
+
+    .opciones ul {
+        gap: 0.4rem;
+    }
+
+    .opciones ul li a {
+        padding: 0.4rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+/* Tamaño 768 */
+@media (max-width: 768px) {
+
+    .opciones {
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+
+    .opciones ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .opciones ul li {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .opciones ul li a {
+        flex: 1 1 auto;
+        min-width: 120px;
+        text-align: center;
+        margin: 0;
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+/* Tamaño 480 */
+@media (max-width: 480px) {
+
+    .opciones {
+        padding: 0.8rem;
+    }
+
+    .opciones ul li {
+        flex: 1 1 100%;
+    }
+
+    .opciones ul li a {
+        min-width: 100%;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+}
+
+.opciones * {
+    box-sizing: border-box;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace 360 | Atención al Cliente</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Bodys/atencion_cliente.css">
+    <script src="/JS/productos.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/Bodys/atencion_cliente.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main class="atencion_cliente">
+        <h1>Centro de Atención al Cliente</h1>
+        <h2>¿En qué podemos ayudarle?</h2>
+        <!-- Preguntas frecuentes -->
+        <section id="Preguntas_Frecuentes">
+            <h2>Preguntas Frecuentes</h2>
+            <article>
+                <details>
+                    <summary><strong>¿Cómo puedo realizar una compra?</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>Seleccione el producto deseado, agréguelo al carrito y siga los pasos para confirmar su pedido.
+                    </p>
+                </details>
+            </article>
+            <article>
+                <details>
+                    <summary><strong>¿Cuánto tarda el envío?</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>El tiempo de entrega varía según la ubicación, generalmente entre 2 y 5 días hábiles para pedidos
+                        nacionales.</p>
+                </details>
+            </article>
+            <article>
+                <details>
+                    <summary><strong>¿Cómo solicitar una devolución?</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>Puede solicitar una devolución contactando nuestro soporte.</p>
+                </details>
+            </article>
+            <article>
+                <details>
+                    <summary><strong>¿Cómo contactar al vendedor?</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>En la página del producto encontrará la opción para comunicarse con el vendedor.</p>
+                </details>
+            </article>
+        </section>
+
+        <!-- Políticas -->
+        <section id="politicas_condiciones">
+            <h2>Políticas y Condiciones</h2>
+            <article>
+                <details>
+                    <summary><strong>Política de devoluciones</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>Las devoluciones deben realizarse dentro de los 7 días posteriores a la entrega. Realizando la
+                        solicitud a soporte.
+                    </p>
+                </details>
+            </article>
+            <article>
+                <details>
+                    <summary><strong>Condiciones de compra</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>Al realizar una compra, el usuario acepta nuestros términos y condiciones.</p>
+                </details>
+            </article>
+            <article>
+                <details>
+                    <summary><strong>Garantías de productos</strong>
+                        <span class="iconos">
+                            <i class="fa-solid fa-square-plus icono-plus"></i>
+                            <i class="fa-solid fa-minus icono-minus"></i>
+                        </span>
+                    </summary>
+                    <p>Los productos cuentan con garantía según el fabricante o vendedor.</p>
+                </details>
+            </article>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <article>
+                <p><strong>Correo:</strong> soporte@marketplace360.com</p>
+                <p><strong>Teléfono:</strong> +506 0000 0000</p>
+                <p><strong>Horario:</strong> De 8:00am a 6:00pm</p>
+            </article>
+        </section>
+
+        <!-- Formulario -->
+        <section id="consulta_formulario" class="consulta_formulario">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos del usuario</legend>
+
+                    <label for="nombre">Nombre completo</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Inserte su nombre completo..."
+                        required><br><br>
+
+                    <label for="correo">Correo electrónico de contacto</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Inserte su correo electrónico..."
+                        required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Consulta</legend>
+
+                    <label for="asunto">Asunto</label><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto por el que consulta..."
+                        required><br><br>
+
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Consulta:" required></textarea><br><br>
+                </fieldset>
+                <button type="submit" class="btn_default">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Alertas -->
+    <section id="alerta" class="alerta"></section>
+</body>
+
+</html>
