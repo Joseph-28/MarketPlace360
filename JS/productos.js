@@ -12,7 +12,7 @@ const productosData = [
         stock: 15,
         fecha: "06-04-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/camisa.jpg"
+        imagen: "img/Catalogo/camisa.jpg"
     },
     {
         categoria: "Moda",
@@ -26,7 +26,7 @@ const productosData = [
         stock: 12,
         fecha: "04-01-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/pantalon.jpg"
+        imagen: "img/Catalogo/pantalon.jpg"
     },
     {
         categoria: "Moda",
@@ -40,7 +40,7 @@ const productosData = [
         stock: 10,
         fecha: "20-03-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/chaqueta.jpg"
+        imagen: "img/Catalogo/chaqueta.jpg"
     },
     {
         categoria: "Moda",
@@ -54,7 +54,7 @@ const productosData = [
         stock: 9,
         fecha: "04-03-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/sudadera.jpg"
+        imagen: "img/Catalogo/sudadera.jpg"
     },
     /* Calzado */
     {
@@ -69,7 +69,7 @@ const productosData = [
         stock: 20,
         fecha: "15-02-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/zapatilla.jpg"
+        imagen: "img/Catalogo/zapatilla.jpg"
     },
     {
         categoria: "Calzado",
@@ -83,7 +83,7 @@ const productosData = [
         stock: 17,
         fecha: "28-03-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Tenis.jpg"
+        imagen: "img/Catalogo/Tenis.jpg"
     },
     {
         categoria: "Calzado",
@@ -97,7 +97,7 @@ const productosData = [
         stock: 8,
         fecha: "10-01-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Botas.jpg"
+        imagen: "img/Catalogo/Botas.jpg"
     },
     {
         categoria: "Calzado",
@@ -111,7 +111,7 @@ const productosData = [
         stock: 6,
         fecha: "04-02-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Zapatos.jpg"
+        imagen: "img/Catalogo/Zapatos.jpg"
     },
     /* Belleza */
     {
@@ -126,7 +126,7 @@ const productosData = [
         stock: 12,
         fecha: "02-01-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/maquillaje.jpg"
+        imagen: "img/Catalogo/maquillaje.jpg"
     },
     {
         categoria: "Belleza",
@@ -140,7 +140,7 @@ const productosData = [
         stock: 10,
         fecha: "04-01-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Paleta.jpg"
+        imagen: "img/Catalogo/Paleta.jpg"
     },
     {
         categoria: "Belleza",
@@ -154,7 +154,7 @@ const productosData = [
         stock: 9,
         fecha: "03-03-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Secadora.jpg"
+        imagen: "img/Catalogo/Secadora.jpg"
     },
     {
         categoria: "Belleza",
@@ -168,7 +168,7 @@ const productosData = [
         stock: 8,
         fecha: "29-03-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Plancha.jpg"
+        imagen: "img/Catalogo/Plancha.jpg"
     },
     /* Salud */
     {
@@ -183,7 +183,7 @@ const productosData = [
         stock: 25,
         fecha: "25-01-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/vitaminas.jpg"
+        imagen: "img/Catalogo/vitaminas.jpg"
     },
     {
         categoria: "Salud",
@@ -197,7 +197,7 @@ const productosData = [
         stock: 20,
         fecha: "30-03-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Proteina.png"
+        imagen: "img/Catalogo/Proteina.png"
     },
     {
         categoria: "Salud",
@@ -211,7 +211,7 @@ const productosData = [
         stock: 14,
         fecha: "18-02-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Termometro.jpg"
+        imagen: "img/Catalogo/Termometro.jpg"
     },
     {
         categoria: "Salud",
@@ -225,7 +225,7 @@ const productosData = [
         stock: 11,
         fecha: "04-04-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Oximetro.jpg"
+        imagen: "img/Catalogo/Oximetro.jpg"
     },
     /* Hogar */
     {
@@ -240,7 +240,7 @@ const productosData = [
         stock: 11,
         fecha: "12-03-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/lampara.jpg"
+        imagen: "img/Catalogo/lampara.jpg"
     },
     {
         categoria: "Hogar",
@@ -254,7 +254,7 @@ const productosData = [
         stock: 10,
         fecha: "04-02-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Ventilador.jpg"
+        imagen: "img/Catalogo/Ventilador.jpg"
     },
     {
         categoria: "Hogar",
@@ -268,7 +268,7 @@ const productosData = [
         stock: 7,
         fecha: "30-01-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Sabanas.jpg"
+        imagen: "img/Catalogo/Sabanas.jpg"
     },
     {
         categoria: "Hogar",
@@ -282,7 +282,7 @@ const productosData = [
         stock: 6,
         fecha: "31-03-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Cobija.jpg"
+        imagen: "img/Catalogo/Cobija.jpg"
     },
     /* Tecnología */
     {
@@ -297,7 +297,7 @@ const productosData = [
         stock: 16,
         fecha: "03-01-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/audifonos.jpg"
+        imagen: "img/Catalogo/audifonos.jpg"
     },
     {
         categoria: "Tecnología",
@@ -311,7 +311,7 @@ const productosData = [
         stock: 14,
         fecha: "04-03-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Parlante.jpg"
+        imagen: "img/Catalogo/Parlante.jpg"
     },
     {
         categoria: "Tecnología",
@@ -325,7 +325,7 @@ const productosData = [
         stock: 6,
         fecha: "10-03-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Smartwatch.jpg"
+        imagen: "img/Catalogo/Smartwatch.jpg"
     },
     {
         categoria: "Tecnología",
@@ -339,7 +339,7 @@ const productosData = [
         stock: 7,
         fecha: "05-04-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Pulsera.jpeg"
+        imagen: "img/Catalogo/Pulsera.jpeg"
     },
     /* Niños */
     {
@@ -354,7 +354,7 @@ const productosData = [
         stock: 18,
         fecha: "15-01-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/juguete.jpg"
+        imagen: "img/Catalogo/juguete.jpg"
     },
     {
         categoria: "Niños",
@@ -368,7 +368,7 @@ const productosData = [
         stock: 15,
         fecha: "04-01-2026",
         valoracion: 5,
-        imagen: "/img/Catalogo/Rompecabezas.jpg"
+        imagen: "img/Catalogo/Rompecabezas.jpg"
     },
     {
         categoria: "Niños",
@@ -382,7 +382,7 @@ const productosData = [
         stock: 13,
         fecha: "22-02-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Mochila.jpg"
+        imagen: "img/Catalogo/Mochila.jpg"
     },
     {
         categoria: "Niños",
@@ -396,6 +396,6 @@ const productosData = [
         stock: 12,
         fecha: "04-04-2026",
         valoracion: 4,
-        imagen: "/img/Catalogo/Lonchera.jpg"
+        imagen: "img/Catalogo/Lonchera.jpg"
     }
 ];
