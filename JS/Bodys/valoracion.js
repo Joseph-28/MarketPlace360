@@ -39,7 +39,7 @@ function cargarResenias() {
             
             <section class="user_info">
                 <figure>
-                    <img src="/img/image-solid.png" alt="Usuario" width="64">
+                    <img src="img/image-solid.png" alt="Usuario" width="64">
                 </figure>
                 <section class="user_meta">
                     <strong>${resena.nombre}</strong><br>
